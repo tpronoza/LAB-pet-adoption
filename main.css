@@ -1,0 +1,7 @@
+.cardContainer {
+  display: flex;
+}
+
+.bg-info.bg-gradient{
+  background-image: var(--bs-gradient);
+}
