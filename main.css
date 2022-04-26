@@ -1,7 +1,46 @@
-.cardContainer {
+body {
+  background-color: rgb(240, 243, 163);
+}
+
+#cardContainer {
+  flex-wrap: wrap;
+  justify-content: center;
   display: flex;
 }
 
-.bg-info.bg-gradient{
-  background-image: var(--bs-gradient);
+#filterContainer {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin-right: 15px;
+}
+
+.card-img-top {
+  padding: 15px;
+  align-items: center;
+  width: auto !important;
+  height: 185px !important;
+  }
+
+.card {
+  margin: 12px;
+  text-align: center;
+  background-color: whitesmoke;
+  border-style: groove;
+}
+
+#cat-btn {
+  background-color: #5cb8fb;
+}
+
+#dog-btn {
+  background-color: #71b668 ;
+}
+
+#dino-btn {
+  background-color: #d56045;
+}
+
+#clear-btn {
+  background-color:rgb(241, 207, 207);
 }

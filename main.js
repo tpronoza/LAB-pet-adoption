@@ -13,7 +13,7 @@ const pets = [
       color: "Brown",
       specialSkill: "Just picks the tomatoes off of a sandwich instead of requesting a whole new sandwich.",
       typeOfPet: "dino",
-      image: "http://www.jozilife.co.za/wp-content/uploads/The-Dino-Expo.jpg"
+      image: "https://i.pinimg.com/474x/04/30/4b/04304b385421257ab7278c3afbf2cf62.jpg"
     },
     {
       id: 3,
@@ -61,7 +61,7 @@ const pets = [
       color: "Grey",
       specialSkill: "Comfortable in the outdoors for up to eight hours.",
       typeOfPet: "dino",
-      image: "http://www.theouthousers.com/images/jck//ThanosCopter/news/grumpasaur.jpg"
+      image: "https://i.pinimg.com/474x/04/30/4b/04304b385421257ab7278c3afbf2cf62.jpg"
     },
     {
       id: 9,
@@ -85,7 +85,7 @@ const pets = [
       color: "Orange",
       specialSkill: "Can be around food without staring creepily at it.",
       typeOfPet: "dino",
-      image: "http://www.cantref.com/userfiles/events/walking%20dino.jpg?w=600"
+      image: "https://i.pinimg.com/474x/04/30/4b/04304b385421257ab7278c3afbf2cf62.jpg"
     },
     {
       id: 12,
@@ -125,7 +125,7 @@ const pets = [
       color: "Brown",
       specialSkill: "Drives at a safe rate of speed in snow or rain.",
       typeOfPet: "dino",
-      image: "https://images.readwrite.com/wp-content/uploads/2018/03/t-rex-dino-quiz-e1490854556549.jpg"
+      image: "https://i.pinimg.com/474x/04/30/4b/04304b385421257ab7278c3afbf2cf62.jpg"
     },
     {
       id: 17,
@@ -133,7 +133,7 @@ const pets = [
       color: "Yellow",
       specialSkill: "Does not freak out if you haven’t seen his favorite movie (The Big Lebowski).",
       typeOfPet: "cat",
-      image: "http://www.funnycatsite.com/pictures/Close_Up_Yawn.jpg"
+      image: "https://swall.teahub.io/photos/small/216-2166558_funny-kitten-wallpaper-wallpaper-free-download-cute-kittens.jpg"
     },
     {
       id: 18,
@@ -141,7 +141,7 @@ const pets = [
       color: "Brown",
       specialSkill: "Proficient in air guitar",
       typeOfPet: "dino",
-      image: "https://www.nation.co.ke/image/view/-/4078922/highRes/1742693/-/maxw/600/-/1453yvh/-/DINO.jpg"
+      image: "https://i.pinimg.com/474x/04/30/4b/04304b385421257ab7278c3afbf2cf62.jpg"
     },
     {
       id: 19,
@@ -157,7 +157,7 @@ const pets = [
       color: "Black",
       specialSkill: "Uses litter box at appropriate hours.",
       typeOfPet: "cat",
-      image: "http://www.funnycatsite.com/pictures/Lazy_White_Cat.jpg"
+      image: "https://i.pinimg.com/564x/28/bb/ce/28bbce5c0fa2e6bc2b786937be1c2ed9.jpg"
     },
     {
       id: 21,
@@ -165,7 +165,7 @@ const pets = [
       color: "Red",
       specialSkill: "Owns a Nintendo Power Glove.",
       typeOfPet: "dino",
-      image: "https://img.buzzfeed.com/buzzfeed-static/static/2015-11/2/12/enhanced/webdr15/anigif_enhanced-29802-1446485228-10.gif?crop=250:165;0,0&downsize=715"
+      image: "https://i.pinimg.com/474x/04/30/4b/04304b385421257ab7278c3afbf2cf62.jpg"
     },
     {
       id: 22,
@@ -173,7 +173,7 @@ const pets = [
       color: "Orange",
       specialSkill: "Is comfortable with jokes about his receding hairline.",
       typeOfPet: "cat",
-      image: "http://funnyanimalphoto.com/wp-content/uploads/2013/08/cat_caught_mouse_thegatewaypundit.jpg"
+      image: "https://swall.teahub.io/photos/small/17-177357_collection-of-free-kitten-wallpaper-on-hdwallpapers-cute.jpg"
     },
     {
       id: 23,
@@ -189,7 +189,7 @@ const pets = [
       color: "Brown",
       specialSkill: "Participates in karaoke but does not force others to go out to karaoke.",
       typeOfPet: "dog",
-      image: "http://www.dogbreedplus.com/dog_breeds/images/basset-hound-4.jpg"
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSM86gFK5X9y-iriloLEzw-feL8-QB01JpOA&usqp=CAU"
     },
     {
       id: 25,
@@ -197,7 +197,7 @@ const pets = [
       color: "Red",
       specialSkill: "Knows the words to 4 rap songs.",
       typeOfPet: "cat",
-      image: "http://funbk.s3.amazonaws.com/wp-content/uploads/2016/06/funny-cat-video-which-will-make-you-laugh-louder.jpg"
+      image: "https://breakbrunch.com/wp-content/uploads/2019/06/cute-cat-with-big-eyes-041619-4.jpg"
     },
     {
       id: 26,
@@ -237,24 +237,84 @@ const pets = [
       color: "Red",
       specialSkill: "Doesn’t get weirded out by the word “moist.”",
       typeOfPet: "dino",
-      image: "http://lsae2.iypcdn.com/static//modules/uploads/photos/language1/dino-live-22.jpg?119"
+      image: "https://i.pinimg.com/474x/04/30/4b/04304b385421257ab7278c3afbf2cf62.jpg"
     }
   ];
 
-  const app = document.querySelector("#app");
-let domString = "";
 
-for (const member of pets) {
+  //Utility function
+  const renderToDom = (divId, textToRender) => {
+    const selectedElement = document.querySelector(divId);
+    selectedElement.innerHTML = textToRender;
+  };
 
-  domString += `<div class="card text-dark bg-light mb-3" style="width: 18rem;">
-  <div class="card-header text-center text-muted">${member.name}</div>
-  <img src="${member.image}" class="card-img-top" alt="...">
-  <div class="card-body">
-    <p class="text-center">${member.color}</p>
-    <p class="card-text">${member.specialSkill}</p>
-  </div>
-  <div class="text-center card-footer bg-transparent border-success"> ${member.typeOfPet}</div>
+//cards on dom
+const app = document.querySelector("#app");
+  let domString = "";
+  for (const pet of pets) {
+  
+    domString += 
+    `<div class="card" style="width: 18rem;">
+    <div id="name" class="card-header">${pet.name}</div>
+    <div class="card-body">
+    <img src="${pet.image}" class="card-img-top" alt="pet photo">
+    <p class="card-text">${pet.color}</p>
+    </div>
+    <p class="card-text">${pet.specialSkill}</p>
+    <div id="type" class="card-footer">${pet.typeOfPet}</div>
+  </div>`;
+  }
+  // renderToDom('#cardContainer', domString);
+  app.innerHTML = domString;
 
-</div>`;
+const filterButtons = () => {
+  let domString= "";
+  domString =
+  `<div class="d-flex flex-wrap justify-content-between my-3">
+    <button id="cat-btn" class="btn btn-primary" type="button">cats</button>
+    <button id="dog-btn" class="btn btn-primary" type="button">dogs</button>
+    <button id="dino-btn" class="btn btn-primary" type="button">dino</button>
+    <button id="clear-btn" class="btn btn-primary" type="button">clear</button>
+  </div>`
+  ;
+renderToDom('#filterContainer', domString); 
 }
-app.innerHTML = domString;
+
+
+
+
+//filter
+function eventListeners() {
+  let domString ="";
+  document.querySelector('#filterContainer').addEventListener('click', (e) => {
+   //console.log('clicked', e.target.id)
+    if (e.target.id === 'clear-btn') {
+      cardsOnDom(pets);
+    } else if (e.target.id === "dog-btn") {
+      const dog = pets.filter((burito) => burito.type === e.target.id);
+      domString = dog;
+      cardsOnDom(dog);
+      //cardsOnDom(pets.filter((burito) => burito.type=='Dog'));
+    }  else if (e.target.id === "cat-btn"){
+      const cat = pets.filter((burito) => burito.type === e.target.id);
+      domString = cat;
+      cardsOnDom(cat);
+      //cardsOnDom(pets.filter((burito) => burito.type=='Cat'));
+    } else if (e.target.id === "dino-btn"){
+      cardsOnDom(pets.filter((burito) => burito.type=='Dino'));
+      domString = dino;
+      cardsOnDom(dino);
+    } //else if(e.target.id) {
+      //cardsOnDom(pets.filter((burito) => burito.type===e.target.id));}
+  });
+};
+
+
+const startApp = () => {
+  filterButtons(); 
+  renderToDom(pets);
+  eventListeners();
+};
+
+//starts app to use funtions above^^
+startApp();
